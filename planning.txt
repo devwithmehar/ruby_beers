@@ -1,0 +1,15 @@
+Model: company (companies in DB)
+id: Integer(auto Increment, Primary key)
+name: string
+created_at: timestamp
+updated_at: timestamp
+
+Model: Beer (beers in DB)
+id: Integer(auto Increment, Primary key)
+name: string
+description: text
+price : decimal
+created_at : timestamp
+updated_at : timestamp
+
+these both model has one to many relationship
