@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :beers
+  resources :bees
   # get 'companies/index'
   # get 'companies/show'
   # DSL - Domain specific language

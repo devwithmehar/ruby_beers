@@ -9,7 +9,16 @@ id: Integer(auto Increment, Primary key)
 name: string
 description: text
 price : decimal
+->company_id      // it is FK to the id in companies
 created_at : timestamp
 updated_at : timestamp
 
 these both model has one to many relationship
+
+GET /beers => beers#index
+GET /beers/:id=>beers#show
+POST /beers/new => beers#new
+POST /beers/create => beers#create
+GET /beers/:id/edit=>beers#edit
+PATCH  /beers/:id =>beers# update
+DELETE /beers /:id => beers#delete
