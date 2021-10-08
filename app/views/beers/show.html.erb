@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Company:</strong>
+  <%= @beer.company.name %>
+</p>
+
+<p>
   <strong>Name:</strong>
   <%= @beer.name %>
 </p>
@@ -12,7 +17,7 @@
 
 <p>
   <strong>Price:</strong>
-  <%= @beer.price %>
+  <%= number_to_currency @beer.price %>
 </p>
 
 <%= link_to 'Edit', edit_beer_path(@beer) %> |
